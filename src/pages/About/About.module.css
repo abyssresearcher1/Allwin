@@ -1,0 +1,182 @@
+.About {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.about__general {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about__info {
+  width: 50%;
+}
+
+.about__info h2 {
+  font-size: 50px;
+}
+
+.about__info p {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.about__info_image {
+  width: 50%;
+}
+
+.about__info_image img {
+  width: 100%;
+}
+/*  */
+
+.goals {
+  padding-bottom: 5%;
+}
+
+.goals__general {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.goals__image {
+  width: 40%;
+}
+
+.goals__image img {
+  width: 80%;
+}
+
+.goals__info {
+  width: 40%;
+}
+
+.goals__info p {
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.goalsBtn {
+  padding: 15px;
+  width: 220px;
+  border-radius: 15px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+/*  */
+
+.assortiment {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.assortiment__general {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.assortiment__info {
+  width: 40%;
+}
+
+.assortiment__info p {
+  /* font-family: Gotham; */
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.assortiment__image {
+  width: 40%;
+}
+
+.assortiment__image img {
+  margin-left: 100px;
+  width: 80%;
+}
+
+/*  */
+
+.team {
+  padding: 3% 0% 5%;
+}
+
+.team__general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__info {
+  text-align: center;
+}
+
+.team__info h2 {
+  color: red;
+  text-transform: uppercase;
+  /* font-family: Gotham; */
+  font-size: 20px;
+  padding-left: 12px;
+}
+
+.team__info p {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 22px;
+  /* font-family: Gotham; */
+}
+
+.team__info span {
+  font-family: Gotham;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 22px;
+  color: rgb(14, 14, 14);
+  font-size: 20px;
+}
+
+.team__line{
+  width: 81%;
+  margin: 2%;
+  color: black;
+}
+
+.team__images {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team__main_image {
+  width: 50%;
+}
+
+.team__main_image img {
+  width: 100%;
+}
+
+.team__other_images {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team__other_images img {
+  width: 101%;
+}

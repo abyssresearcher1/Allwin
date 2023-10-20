@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.main {
+  background-image: url(../../assets//model.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.main__general {
+  max-width: 100%;
+  display: flex;
+}
+
+.main__info {
+  padding: 7% 16%;
+}
+
+.main__info p {
+  font-family: "Montserrat";
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h1 span {
+  font-size: 72px;
+  padding: 15px;
+  font-family: "Open Sans";
+}
+
+.advantages {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  padding-top: 3%;
+}
+
+.advantages__info {
+  border-left: 5px solid red;
+  padding: 5px;
+}
+
+.advantages__catalog button {
+  padding: 15px;
+  width: 200px;
+  background-color: rgb(255, 85, 85);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.sundry {
+  padding: 10%;
+  background-color: #bebebe;
+}
+
+.sundry__general {
+  max-width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.sundry__news img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.sundry__news {
+  position: relative;
+}
+
+.sundry__news a {
+  display: none;
+}
+
+.sundry__news h2 {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  color: white;
+  font-size: 40px;
+}
+
+.sundry__recommended img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.sundry__recommended {
+  position: relative;
+}
+
+.sundry__recommended h2 {
+  position: absolute;
+  top: 65%;
+  left: 6%;
+  color: white;
+}
+
+.sundry__hits {
+  position: relative;
+}
+
+.sundry__hits h2 {
+  position: absolute;
+  top: 65%;
+  left: 6%;
+  color: white;
+}
+
+.sundry__hits img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.sundry__right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  background-color: #bebebe;
+}
+
+.card {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.card__item {
+  position: relative;
+}
+
+.card__image {
+  width: 206px;
+  height: 322px;
+  border-radius: 20px;
+}
+
+.card__info {
+  position: absolute;
+  width: 100%;
+  height: 33%;
+  border-radius: 20px;
+  top: 215px;
+  background-color: white;
+}
+
+.card__info_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.card__info_text span {
+  padding-bottom: 15%;
+}
+
+.card__info_text p {
+  margin: 0;
+}
+
+.card__image_block {
+  position: relative;
+}
+
+.basket {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  z-index: 3;
+  background: rgba(255, 85, 85, 0.6);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/*  */
+
+.allProducts {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.allProductsBtn {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  color: rgb(255, 85, 85);
+}
+/*  */
+
+.categories {
+  background: #bebebe;
+  padding-bottom: 15%;
+}
+
+.categories h2 {
+  margin: 0;
+  padding-left: 15%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.categories__general {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+
+.mens__clothes {
+  position: relative;
+}
+
+.men__clothes_info_block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 310px;
+  align-items: center;
+  height: 111px;
+  top: 73px;
+  left: -25px;
+  position: absolute;
+  padding-top: 100px;
+  border-radius: 20px;
+}
+
+.mens__clothes_info {
+  display: flex;
+  gap: 20px;
+  color: black;
+  background-color: white;
+}
+
+.categories__images {
+  width: 260px;
+  height: 190px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 4;
+}
+
+.womens__clothes {
+  position: relative;
+}
+
+.womens__clothes_info_block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 310px;
+  align-items: center;
+  height: 111px;
+  top: 73px;
+  left: -25px;
+  position: absolute;
+  padding-top: 100px;
+  border-radius: 20px;
+}
+
+.womens__clothes_info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kids__clothes {
+  position: relative;
+}
+
+.kids__clothes_info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kids__clothes_info_block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 310px;
+  align-items: center;
+  height: 111px;
+  top: 73px;
+  left: -25px;
+  position: absolute;
+  padding-top: 100px;
+  border-radius: 20px;
+}
+
+.fullfilment {
+  background: #bebebe;
+  margin: 0;
+}
+
+.fullfilment__general {
+  background-image: url(../../assets//fullfilment.webp);
+  border-radius: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0% 6% 0%;
+  padding: 13% 5%;
+}
+
+.fullfilment__info h2 {
+  font-size: 40px;
+}
+
+.fullfilment__info span {
+  font-size: 20px;
+}
+
+.fullfilment__info p {
+  font-size: 20px;
+}
+
+/*  */
+
+.advantages__cards {
+  background: #bebebe;
+  padding-top: 10%;
+}
+
+.advantages__cards_general {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  padding: 5%;
+}
+
+.price__card {
+  background-color: white;
+  width: 25%;
+  padding: 4% 1% 0;
+  height: 30vh;
+  border-radius: 15px;
+  position: relative;
+}
+
+.coin {
+  position: absolute;
+  top: -80px;
+  left: 105px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+}
+
+.order__card {
+  background-color: white;
+  width: 25%;
+  padding: 4% 1% 0;
+  height: 30vh;
+  border-radius: 15px;
+  position: relative;
+}
+
+.shoper {
+  position: absolute;
+  top: -80px;
+  left: 115px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+}
+
+.delivery__card {
+  background-color: white;
+  width: 25%;
+  padding: 4% 1% 0;
+  height: 30vh;
+  border-radius: 15px;
+  position: relative;
+}
+
+.like {
+  position: absolute;
+  top: -80px;
+  left: 120px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+}
+
+/*  */
