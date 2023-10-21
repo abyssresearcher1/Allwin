@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import styles from "./MainPage.module.css";
 import recommended from "../../assets/sundry__recommended.webp";
@@ -12,6 +13,7 @@ import kidsClothes from "../../assets/kidsClothes.webp";
 import coin from "../../assets/coin.svg";
 import shoper from "../../assets/shoper.svg";
 import like from "../../assets/like.svg";
+import arrow from "../../assets/arrow.svg";
 
 const MainPage = () => {
   const [clothes, setClothes] = useState(null);
@@ -35,6 +37,8 @@ const MainPage = () => {
     <Layout>
       <section className={styles.main}>
         <div className={styles.container}>
+          <div className={styles.redShadow}></div>
+          <div className={styles.yellowShadow}></div>
           <div className={styles.main__general}>
             <div className={styles.main__info}>
               <h1 className={styles.h1}>
@@ -66,7 +70,14 @@ const MainPage = () => {
         <div className={styles.sundry__general}>
           <div className={styles.sundry__left_side}>
             <div className={styles.sundry__news}>
-              <img src={news} alt="" />
+              <div className={styles.sundry__news_image}>
+                <img
+                  src={news}
+                  alt="new__clothes"
+                  className={styles.new__clothes}
+                />
+                <img src={arrow} alt="arrow" className={styles.news_arrow} />
+              </div>
               <h2>Новинки</h2>
               <a>Для мужчин</a>
               <a href="#">Для детей</a>
@@ -75,11 +86,17 @@ const MainPage = () => {
           </div>
           <div className={styles.sundry__right_side}>
             <div className={styles.sundry__recommended}>
-              <img src={recommended} alt="recommended" />
+              <img
+                src={recommended}
+                alt="recommended"
+                className={styles.recommended}
+              />
+              <img src={arrow} alt="arrow" className={styles.recommended_arrow} />
               <h2>Рекомендуемые</h2>
             </div>
             <div className={styles.sundry__hits}>
-              <img src={hit} alt="" />
+              <img src={hit} alt="" className={styles.hits} />
+              <img src={arrow} alt="arrow" className={styles.hits_arrow} />
               <h2>Хит продаж</h2>
             </div>
           </div>
@@ -166,7 +183,7 @@ const MainPage = () => {
           </div>
         </div>
       </section>
-      <section className={styles.fullfilment}>
+      <section className={styles.fullfilment} id="fullfilment">
         <div className={styles.fullfilment__general}>
           <div className={styles.fullfilment__info}>
             <h2>Бесплатный фулфилмент</h2>

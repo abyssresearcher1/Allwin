@@ -16,14 +16,18 @@ const Header = () => {
             </div>
             <div className={styles.navbar}>
               <nav className={styles.nav}>
-                <Link to={"/"}>Главная</Link>
-                <a href="#">Все товары</a>
-                <Link to={"/About"}>О нас</Link>
-                <Link to={"/Delivery"}>Доставка</Link>
-                <a href="#">Фулфилмент</a>
+                <Link to="/">Главная</Link>
+                <Link to="#">Все товары</Link>
+                <Link to="/About">О нас</Link>
+                <Link to="/Delivery">Доставка</Link>
+                <a href="/#fullfilment">Фулфилмент</a>
                 <div className={styles.nav__search}>
                   <input type="text" placeholder="Поиск" />
-                  <img src={search} alt="Search" className={styles.header__search} />
+                  <img
+                    src={search}
+                    alt="Search"
+                    className={styles.header__search}
+                  />
                 </div>
               </nav>
               <div className={styles.header__settings}>
