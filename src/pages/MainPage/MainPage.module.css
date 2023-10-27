@@ -7,7 +7,6 @@
   background-image: url(../../assets//model.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .redShadow {
@@ -35,7 +34,7 @@
 }
 
 .main__info {
-  padding: 7% 16%;
+  padding: 11% 0 18% 15%;
 }
 
 .main__info p {
@@ -79,7 +78,7 @@ h1 span {
 
 .sundry {
   padding: 10%;
-  background-color: #bebebe;
+  background-color: rgb(240, 240, 240);
 }
 
 .sundry__general {
@@ -99,10 +98,10 @@ h1 span {
 
 .news_arrow {
   position: absolute;
-  width: 50px;
+  width: 10% !important;
   height: 50px;
   top: 20px;
-  left: 320px;
+  left: 85%;
 }
 
 .sundry__news a {
@@ -127,11 +126,11 @@ h1 span {
 }
 
 .recommended_arrow {
-  width: 40px;
+  width: 10% !important;
   height: 40px;
   position: absolute;
   top: 20px;
-  left: 180px;
+  left: 85%;
 }
 
 .sundry__recommended h2 {
@@ -146,11 +145,11 @@ h1 span {
 }
 
 .hits_arrow {
-  width: 40px;
+  width: 10% !important;
   height: 40px;
   position: absolute;
   top: 20px;
-  left: 180px;
+  left: 85%;
 }
 
 .sundry__hits h2 {
@@ -174,13 +173,14 @@ h1 span {
 /* карточки с товарами */
 
 .cards {
-  background-color: #bebebe;
+  background-color: rgb(240, 240, 240);
 }
 
 .card {
   display: flex;
   gap: 50px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card__item {
@@ -252,7 +252,7 @@ h1 span {
 /* категории */
 
 .categories {
-  background: #bebebe;
+  background-color: rgb(240, 240, 240);
   padding-bottom: 15%;
 }
 
@@ -261,6 +261,8 @@ h1 span {
   padding-left: 15%;
   padding-top: 5%;
   padding-bottom: 2%;
+  font-size: 30px;
+  letter-spacing: 0.1em;
 }
 
 .categories__general {
@@ -287,11 +289,30 @@ h1 span {
   border-radius: 20px;
 }
 
+.men__clothes_info_block h3 {
+  line-height: 1.33;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
 .mens__clothes_info {
   display: flex;
   gap: 20px;
   color: black;
   background-color: white;
+}
+
+.mens__clothes_info a {
+  display: flex;
+  /* -webkit-box-align: center; */
+  align-items: center;
+  gap: 9px;
+  /* font-family: Gotham; */
+  /* font-size: var(--chakra-fontSizes-md); */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  letter-spacing: -0.05em;
+  text-decoration: none;
 }
 
 .categories__images {
@@ -320,10 +341,29 @@ h1 span {
   border-radius: 20px;
 }
 
+.womens__clothes_info_block h3 {
+  line-height: 1.33;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
 .womens__clothes_info {
   display: flex;
   gap: 20px;
   justify-content: center;
+}
+
+.womens__clothes_info a {
+  display: flex;
+  /* -webkit-box-align: center; */
+  align-items: center;
+  gap: 9px;
+  /* font-family: Gotham; */
+  /* font-size: var(--chakra-fontSizes-md); */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  letter-spacing: -0.05em;
+  text-decoration: none;
 }
 
 .kids__clothes {
@@ -350,24 +390,59 @@ h1 span {
   border-radius: 20px;
 }
 
+.kids__clothes_info_block h3 {
+  line-height: 1.33;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.kids__clothes_info_block a {
+  display: flex;
+  /* -webkit-box-align: center; */
+  align-items: center;
+  gap: 9px;
+  /* font-family: Gotham; */
+  /* font-size: var(--chakra-fontSizes-md); */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+}
+
 /* фуллфилмент */
 
 .fullfilment {
-  background: #bebebe;
+  background-color: rgb(240, 240, 240);
   margin: 0;
 }
 
+.fullfilment__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fullfilment__box {
+  width: 36px;
+  height: 36px;
+}
+
 .fullfilment__general {
+  margin: 0% 6% 0%;
+}
+
+.fullfilment__info {
   background-image: url(../../assets//fullfilment.webp);
-  border-radius: 20px;
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: 0% 6% 0%;
-  padding: 13% 5%;
+  height: 32vh;
+  padding: 15% 5%;
+  border-radius: 16px;
 }
 
 .fullfilment__info h2 {
   font-size: 40px;
+  margin: 0;
 }
 
 .fullfilment__info span {
@@ -381,7 +456,7 @@ h1 span {
 /* преимущества */
 
 .advantages__cards {
-  background: #bebebe;
+  background-color: rgb(240, 240, 240);
   padding-top: 10%;
 }
 
@@ -451,4 +526,283 @@ h1 span {
   box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: -13px 2px 5px 4px rgba(0, 0, 0, 0.13);
+}
+
+@media screen and (max-width: 1200px) {
+  .categories__general {
+    gap: 82px;
+  }
+
+  .price__card {
+    height: 35vh;
+  }
+
+  .delivery__card {
+    height: 35vh;
+  }
+
+  .order__card {
+    height: 35vh;
+  }
+
+  .coin {
+    left: 70px;
+    width: 138px;
+    height: 138px;
+  }
+
+  .like {
+    left: 76px;
+  }
+
+  .shoper {
+    left: 84px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .main {
+    background-size: 100%;
+  }
+
+  .main__info {
+    padding: 7% 0 0% 13%;
+  }
+
+  .sundry__news h2 {
+    top: 65%;
+  }
+
+  .sundry__news_image img {
+    border-radius: 25px;
+  }
+
+  .sundry__recommended h2 {
+    top: 56%;
+  }
+
+  .sundry__recommended img {
+    border-radius: 15px;
+  }
+
+  .advantages__cards_general {
+    padding: 0%;
+  }
+
+  .sundry__hits h2 {
+    top: 56%;
+  }
+
+  .sundry__hits img {
+    border-radius: 15px;
+  }
+
+  .advantages__cards_general {
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__info {
+    padding: 0% 0 0% 9%;
+  }
+
+  .main__info p {
+    font-size: 17px;
+  }
+
+  h1 span {
+    font-size: 54px;
+  }
+
+  .advantages {
+    padding-top: 0;
+    padding-bottom: 3%;
+  }
+
+  .advantages__catalog button {
+    padding: 8px;
+  }
+
+  .sundry__general {
+    flex-direction: column;
+  }
+
+  .sundry__recommended h2 {
+    top: 73%;
+  }
+
+  .sundry__hits h2 {
+    top: 73%;
+  }
+
+  .categories__general {
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+  }
+
+  .categories h2 {
+    padding-left: 37%;
+  }
+
+  .fullfilment__general {
+    padding: 11% 1% 5%;
+  }
+
+  .advantages__cards_general {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .price__card {
+    width: 35%;
+  }
+
+  .order__card {
+    width: 35%;
+  }
+
+  .delivery__card {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    background-size: cover;
+  }
+
+  .main__info {
+    padding: 10% 0px 10% 9%;
+  }
+
+  .advantages {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .advantages__cards_general {
+    flex-direction: column;
+  }
+
+  .price__card {
+    width: 60%;
+    padding-top: 8%;
+  }
+
+  .order__card {
+    width: 60%;
+    padding-top: 8%;
+  }
+
+  .delivery__card {
+    width: 60%;
+    padding-top: 8%;
+  }
+
+  .coin {
+    left: 33%;
+  }
+
+  .shoper {
+    left: 33%;
+  }
+
+  .like {
+    left: 33%;
+  }
+
+  .fullfilment {
+    border-radius: 0px;
+    margin: 0% 0% 0%;
+    padding: 13% 5%;
+  }
+
+  .fullfilment__info h2 {
+    font-size: 30px;
+  }
+
+  .fullfilment__general {
+    padding: 1% 1% 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .h1 span {
+    font-size: 46px;
+    padding: 8px;
+  }
+
+  .main__info {
+    padding: 10% 0px 10% 6%;
+  }
+
+  .main__info p {
+    font-family: "Montserrat";
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .sundry {
+    padding: 30% 4% 12% 4%;
+  }
+
+  .sundry__news h2 {
+    top: 41%;
+  }
+
+  .sundry__recommended h2 {
+    top: 50%;
+  }
+
+  .sundry__hits h2 {
+    top: 50%;
+  }
+
+  .card {
+    padding-top: 15%;
+  }
+
+  .categories h2 {
+    padding-left: 23%;
+  }
+
+  .advantages__cards {
+    padding-top: 37%;
+  }
+
+  .price__card {
+    width: 95%;
+    padding-top: 13%;
+  }
+
+  .coin {
+    left: 28%;
+  }
+
+  .order__card {
+    padding-top: 13%;
+    width: 95%;
+  }
+
+  .shoper {
+    left: 28%;
+  }
+
+  .delivery__card {
+    width: 95%;
+    padding-top: 13%;
+  }
+
+  .like {
+    left: 28%;
+  }
 }

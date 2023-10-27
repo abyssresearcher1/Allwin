@@ -67,3 +67,70 @@ footer {
   width: 34px;
   height: 34px;
 }
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8%;
+    padding: 1% 0% 0 0;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .footer__nav_block {
+    gap: 190px;
+  }
+
+  .contacts {
+    gap: 2%;
+  }
+
+  .contacts button {
+    gap: 19px;
+  }
+
+  .whatsapp {
+    margin-right: -59px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts button {
+    width: 35%;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__nav {
+    flex-wrap: wrap;
+  }
+
+  .contacts button {
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contacts p {
+    font-size: 14px;
+  }
+
+  .contacts button {
+    width: 75%;
+  }
+
+  .footer__nav {
+    gap: 25px;
+  }
+}

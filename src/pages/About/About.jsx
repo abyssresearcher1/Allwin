@@ -8,6 +8,7 @@ import towels from "../../assets/towels.webp";
 import teamMainImage from "../../assets/team__main-image.webp";
 import teamWomenImage from "../../assets/team__women-image.webp";
 import teamMenImage from "../../assets/team__men-image.webp";
+import Questions from "../../components/Questions/Questions";
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
         <div className={styles.container}>
           <div className={styles.about__general}>
             <div className={styles.about__info}>
+          <div className={styles.About__redShadow}></div>
               <h2>
                 Производители стильной мужской, <br /> женской и детской <br />{" "}
                 одежды в Кыргзстане
@@ -77,7 +79,8 @@ const About = () => {
           <div className={styles.team__info}>
             <h2>Команда</h2>
             <p>
-              Имея многолетний опыт, мы <br /> продолжаем нашу работу с азартом и <br />
+              Имея многолетний опыт, мы <br /> продолжаем нашу работу с азартом
+              и <br />
               преданностью первого дня.
             </p>
             <span>
@@ -97,6 +100,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Questions />
     </Layout>
   );
 };

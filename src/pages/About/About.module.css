@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   padding: 5%;
+  background-color: rgb(240, 240, 240);
+}
+
+.About__redShadow {
+  -webkit-box-shadow: -74px -20px 200px 200px rgba(255, 0, 0, 0.28);
+  -moz-box-shadow: -74px -20px 200px 200px rgba(255, 0, 0, 0.28);
+  box-shadow: -74px -20px 200px 200px rgba(255, 0, 0, 0.28);
+  width: 25%;
 }
 
 .container {
@@ -38,6 +46,7 @@
 
 .goals {
   padding-bottom: 5%;
+  background-color: rgb(240, 240, 240);
 }
 
 .goals__general {
@@ -112,6 +121,7 @@
 
 .team {
   padding: 3% 0% 5%;
+  background-color: rgb(240, 240, 240);
 }
 
 .team__general {
@@ -149,7 +159,7 @@
   font-size: 20px;
 }
 
-.team__line{
+.team__line {
   width: 81%;
   margin: 2%;
   color: black;
@@ -179,4 +189,120 @@
 
 .team__other_images img {
   width: 101%;
+}
+
+@media screen and (max-width: 993px) {
+  .about__info h2 {
+    font-size: 44px;
+  }
+
+  .goals__image img {
+    width: 100%;
+  }
+
+  .goals__info {
+    width: 50%;
+  }
+
+  .assortiment__image img {
+    margin-left: 34px;
+    width: 100%;
+  }
+
+  .assortiment__info {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__general {
+    flex-direction: column;
+  }
+
+  .about__info {
+    width: 100%;
+  }
+
+  .about__info_image {
+    width: 100%;
+  }
+
+  .goals__general {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .goals__info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goals__image {
+    width: 55%;
+  }
+
+  .assortiment__general {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .assortiment__info {
+    width: 65%;
+    text-align: center;
+  }
+
+  .assortiment__image {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .goals__info {
+    width: 89%;
+  }
+
+  .goals__image {
+    width: 80%;
+  }
+
+  .assortiment__info {
+    width: 100%;
+  }
+
+  .assortiment__image {
+    width: 80%;
+  }
+
+  .assortiment__image img {
+    margin-left: 0;
+  }
+
+  .team__images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team__main_image {
+    width: 90%;
+  }
+
+  .team__other_images {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__general {
+    padding-top: 5%;
+  }
+
+  .about__info h2 {
+    font-size: 27px;
+  }
+
+  .team__info p {
+    font-size: 18px;
+  }
 }

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import Questions from "../../components/Questions/Questions"
 import styles from "./MainPage.module.css";
 import recommended from "../../assets/sundry__recommended.webp";
 import hit from "../../assets/hit.webp";
@@ -14,6 +15,7 @@ import coin from "../../assets/coin.svg";
 import shoper from "../../assets/shoper.svg";
 import like from "../../assets/like.svg";
 import arrow from "../../assets/arrow.svg";
+import fullfilment from "../../assets/box-tick.webp";
 
 const MainPage = () => {
   const [clothes, setClothes] = useState(null);
@@ -91,7 +93,11 @@ const MainPage = () => {
                 alt="recommended"
                 className={styles.recommended}
               />
-              <img src={arrow} alt="arrow" className={styles.recommended_arrow} />
+              <img
+                src={arrow}
+                alt="arrow"
+                className={styles.recommended_arrow}
+              />
               <h2>Рекомендуемые</h2>
             </div>
             <div className={styles.sundry__hits}>
@@ -186,7 +192,10 @@ const MainPage = () => {
       <section className={styles.fullfilment} id="fullfilment">
         <div className={styles.fullfilment__general}>
           <div className={styles.fullfilment__info}>
-            <h2>Бесплатный фулфилмент</h2>
+            <div className={styles.fullfilment__title}>
+              <img src={fullfilment} alt="" className={styles.fullfilment__box} />
+              <h2>Бесплатный фулфилмент</h2>
+            </div>
             <h3>
               Приобретая товар у нас, вы абсолютно <br /> бесплатно получите
               услуги фулфилмента.
@@ -235,6 +244,7 @@ const MainPage = () => {
           </div>
         </div>
       </section>
+      <Questions />
     </Layout>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import delivery from "../../assets/delivery.webp";
 import Layout from "../../components/Layout/Layout";
+import Questions from "../../components/Questions/Questions";
 import styles from "./Delivery.module.css";
 
 const Delivery = () => {
@@ -43,6 +44,7 @@ const Delivery = () => {
           </div>
         </div>
       </section>
+      <Questions />
     </Layout>
   );
 };
