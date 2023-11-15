@@ -108,6 +108,10 @@ header {
   display: flex;
 }
 
+.headerStyle {
+  display: flex;
+}
+
 @media screen and (max-width: 1417px) {
   .header__general {
     gap: 44px;
@@ -175,8 +179,4 @@ header {
     margin-left: 0;
     flex-direction: column;
   }
-}
-
-.headerStyle {
-  display: flex;
 }

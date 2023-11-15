@@ -1,0 +1,25 @@
+.whatsapp {
+  width: 40px;
+  height: 40px;
+}
+
+.telegram {
+  width: 40px;
+  height: 40px;
+}
+
+.phone {
+  width: 40px;
+  height: 40px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 20px;
+  z-index: 100;
+  top: 70%;
+  left: 95%;
+}
+

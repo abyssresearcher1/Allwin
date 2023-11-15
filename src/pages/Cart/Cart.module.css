@@ -1,8 +1,25 @@
 .cart {
   display: flex;
+  padding-top: 10%;
+  padding-bottom: 5%;
   justify-content: center;
-  padding-top: 17%;
-  height: 50vh;
+  background-color: rgb(240, 240, 240);
+}
+
+.cards {
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  background-color: rgb(240, 240, 240);
+}
+
+.cart__cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 66%;
+  gap: 30px;
 }
 
 .cart__general {
@@ -30,6 +47,65 @@
   cursor: pointer;
 }
 
+.cart__block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.cart_item_image {
+  width: 18%;
+}
+
+.cart_item_image img {
+  width: 100%;
+}
+
+.cart_info {
+  width: 40%;
+}
+
+.item__quantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkout {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding: 50px;
+  width: 300px;
+  border-radius: 10px;
+  position: fixed;
+  right: 80px;
+}
+
+.checkout button {
+  padding: 10px;
+  width: 160px;
+  border-radius: 10px;
+  background: rgb(255, 85, 85);
+  color: white;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.deleteBtn {
+  width: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.deleteBtn img {
+  width: 100%;
+}
+
 @media screen and (max-width: 576px) {
   .cart {
     height: 70vh;
@@ -41,7 +117,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  .cart__general{
+  .cart__general {
     align-items: center;
   }
 
@@ -51,12 +127,12 @@
     align-items: center;
   }
 
-  .cart__info p{
-      font-size: 18px;
-      text-align: center;
+  .cart__info p {
+    font-size: 18px;
+    text-align: center;
   }
 
-  .cart__img{
+  .cart__img {
     display: flex;
     align-items: center;
     justify-content: center;

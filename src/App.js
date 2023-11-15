@@ -5,6 +5,8 @@ import Cart from "./pages/Cart/Cart";
 import Delivery from "./pages/Delivery/Delivery";
 import Favourites from "./pages/Favourites/Favourites";
 import MainPage from "./pages/MainPage/MainPage";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="/fullfilment" element={<MainPage />} />
       <Route path="/Cart" element={<Cart />} />
       <Route path="/Favourites" element={<Favourites />} />
+      <Route path="/Products" element={<Products />} />
+      <Route path="/Products/:id" element={<ProductDetails />} />
     </Routes>
   );
 }

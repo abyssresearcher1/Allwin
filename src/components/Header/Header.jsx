@@ -27,7 +27,7 @@ const Header = () => {
             <div className={cn(styles.navbar, { [styles.headerStyle]: menu })}>
               <nav className={styles.nav}>
                 <Link to="/">Главная</Link>
-                <Link to="#">Все товары</Link>
+                <Link to="/Products">Все товары</Link>
                 <Link to="/About">О нас</Link>
                 <Link to="/Delivery">Доставка</Link>
                 <a

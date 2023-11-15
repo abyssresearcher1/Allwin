@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
-import Questions from "../../components/Questions/Questions"
+import Questions from "../../components/Questions/Questions";
 import styles from "./MainPage.module.css";
 import recommended from "../../assets/sundry__recommended.webp";
 import hit from "../../assets/hit.webp";
@@ -16,6 +16,7 @@ import shoper from "../../assets/shoper.svg";
 import like from "../../assets/like.svg";
 import arrow from "../../assets/arrow.svg";
 import fullfilment from "../../assets/box-tick.webp";
+import Contacts from "../../components/Contacts/Contacts";
 
 const MainPage = () => {
   const [clothes, setClothes] = useState(null);
@@ -34,6 +35,14 @@ const MainPage = () => {
   useEffect(() => {
     getClothes();
   }, []);
+
+  const AddToCart = async (item) => {
+    try {
+      await axios.post(`${process.env.REACT_APP_MAIN_URL}/Cart`, item);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Layout>
@@ -120,7 +129,14 @@ const MainPage = () => {
                       alt="cardImage"
                       className={styles.card__image}
                     />
-                    <img src={basket} alt="basket" className={styles.basket} />
+                    <img
+                      src={basket}
+                      alt="basket"
+                      className={styles.basket}
+                      onClick={() => {
+                        AddToCart(item);
+                      }}
+                    />
                   </div>
                   <div className={styles.card__info}>
                     <div className={styles.card__info_text}>
@@ -193,7 +209,11 @@ const MainPage = () => {
         <div className={styles.fullfilment__general}>
           <div className={styles.fullfilment__info}>
             <div className={styles.fullfilment__title}>
-              <img src={fullfilment} alt="" className={styles.fullfilment__box} />
+              <img
+                src={fullfilment}
+                alt=""
+                className={styles.fullfilment__box}
+              />
               <h2>Бесплатный фулфилмент</h2>
             </div>
             <h3>
@@ -244,6 +264,7 @@ const MainPage = () => {
           </div>
         </div>
       </section>
+      <Contacts />
       <Questions />
     </Layout>
   );

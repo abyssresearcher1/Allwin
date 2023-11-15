@@ -10,11 +10,11 @@ const Favourites = () => {
         <div className={styles.favourites__general}>
           <div className={styles.favoutites__img}>
             <img src={favouritesImg} alt="" />
+            <button className={styles.favouritesBtn}>Перейти к покупке</button>
           </div>
           <div className={styles.favourites__info}>
             <h2>Избранные</h2>
             <p>Отсутствуют избранные товары</p>
-            <button className={styles.favouritesBtn}>Перейти к покупке</button>
           </div>
         </div>
       </section>

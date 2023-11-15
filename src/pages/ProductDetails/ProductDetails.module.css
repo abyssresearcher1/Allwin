@@ -1,0 +1,47 @@
+.product {
+  padding-top: 8%;
+  padding-left: 5%;
+  padding-bottom: 3%;
+  display: flex;
+}
+
+.product__general {
+  display: flex;
+  gap: 20px;
+  width: 78%;
+}
+
+.product__image {
+  width: 35%;
+}
+
+.product__image img {
+  width: 100%;
+}
+
+.product__info {
+  width: 50%;
+}
+
+.product__info h2 {
+  margin: 0;
+}
+
+.image__variants {
+  width: 80px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.variants {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.favourite {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

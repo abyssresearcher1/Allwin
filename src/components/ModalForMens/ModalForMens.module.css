@@ -1,0 +1,23 @@
+.modal {
+  position: absolute;
+  z-index: 1;
+  left: 30%;
+  top: 17%;
+  width: 62%;
+  height: 70%;
+  background-color: #888;
+  overflow: auto;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 10%;
+}
+
+.mens__clothes {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}

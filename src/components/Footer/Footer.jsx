@@ -8,7 +8,6 @@ const Footer = () => {
       <div className={styles.container}>
         <nav className={styles.footer__nav_block}>
           <div className={styles.footer__logo}>
-            {/* <img src="" alt="" /> */}
             <span>aalam</span>
           </div>
           <div className={styles.footer__nav}>

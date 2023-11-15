@@ -1,0 +1,198 @@
+.products {
+  padding-top: 8%;
+  min-height: 80vh;
+  background-color: rgb(240, 240, 240);
+}
+
+.products__general {
+  display: flex;
+}
+
+.products__sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.categories {
+  width: 50%;
+}
+
+.categoriesBtn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.price {
+  width: 50%;
+}
+
+.priceBtn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.size {
+  width: 50%;
+}
+
+.choose__size {
+  display: flex;
+  flex-direction: column;
+}
+
+.sizeBtn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.color {
+  width: 50%;
+}
+
+.colorBtn {
+  width: 100%;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recommended {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceDiaposone {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceInputs {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 20px;
+  display: flex;
+}
+
+.priceMinandMax {
+  display: flex;
+  gap: 35px;
+}
+
+.size__S {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size__M {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size__L {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size__XL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allProducts {
+  width: 70%;
+}
+
+.allProducts__general {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 100%;
+}
+
+.products__cards {
+  width: 20%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.returnDiv {
+  padding-top: 10%;
+  padding-left: 20%;
+}
+
+.modal {
+  position: absolute;
+  z-index: 1;
+  left: 30%;
+  top: 17%;
+  width: 62%;
+  height: 70%;
+  background-color: #888;
+  overflow: auto;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 10%;
+}
+
+.mens__clothes {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.products__cards {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.product__image_block{
+  width: 100%;
+}
+
+.product__image_block_main_image{
+  width: 30%;
+}
+
+.product__image_block img{
+  width: 300%;
+}
