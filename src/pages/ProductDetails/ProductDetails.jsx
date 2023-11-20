@@ -5,6 +5,7 @@ import Layout from "../../components/Layout/Layout";
 import favourite from "../../assets/favourites.svg";
 
 import styles from "./ProductDetails.module.css";
+import { Link } from "react-router-dom";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -25,6 +26,22 @@ const ProductDetails = () => {
   useEffect(() => {
     getClothes();
   }, []);
+
+  const addToCart = async (data) => {
+    try {
+      await axios.post(`${process.env.REACT_APP_MAIN_URL}/Cart`, data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const addToFavourite = async (data) => {
+    try {
+      await axios.post(`${process.env.REACT_APP_MAIN_URL}/Favourites`, data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Layout>
@@ -54,11 +71,26 @@ const ProductDetails = () => {
         <div className={styles.product__checkout}>
           <div className={styles.favourite}>
             <span>{data.price} Com</span>
-            <img src={favourite} alt="" />
+            <button
+              className={styles.addToFavouriteBtn}
+              onClick={() => {
+                addToFavourite(data);
+              }}
+            >
+              <img src={favourite} alt="" />
+            </button>
           </div>
           <div className={styles.favouriteBtns}>
-            <button>В корзину</button>
-            <button>Купить Сейчас</button>
+            <button
+              onClick={() => {
+                addToCart(data);
+              }}
+            >
+              В корзину
+            </button>
+            <button>
+              <Link to={"/checkout"}>Купить Сейчас</Link>
+            </button>
           </div>
         </div>
       </div>

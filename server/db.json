@@ -191,6 +191,122 @@
       "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
     }
   ],
-  "Cart": [],
-  "Favourites": []
+  "Cart": [
+    {
+      "id": 10,
+      "name": "Блуза",
+      "size": "XS",
+      "color": "Голубая",
+      "textile": "Шелк",
+      "price": 40,
+      "quantity": 65,
+      "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "variants": [
+        {
+          "image": "asdasd"
+        },
+        {
+          "image": "asdasd"
+        }
+      ],
+      "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
+    },
+    {
+      "id": 9,
+      "name": "Брюки",
+      "size": "L",
+      "color": "Коричневые",
+      "textile": "Хлопок",
+      "price": 30,
+      "quantity": 80,
+      "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "variants": [
+        {
+          "image": "asdasd"
+        },
+        {
+          "image": "asdasd"
+        }
+      ],
+      "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
+    }
+  ],
+  "Favourites": [
+    {
+      "id": 1,
+      "name": "Футболка",
+      "size": "M",
+      "color": "Синяя",
+      "textile": "Хлопок",
+      "price": 20,
+      "quantity": 100,
+      "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "variants": [
+        {
+          "image": "sadasd"
+        },
+        {
+          "image": "asdasd"
+        }
+      ],
+      "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
+    },
+    {
+      "id": 5,
+      "name": "Куртка",
+      "size": "M",
+      "color": "Черная",
+      "textile": "Нейлон",
+      "price": 60,
+      "quantity": 40,
+      "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "variants": [
+        {
+          "image": "asdasd"
+        },
+        {
+          "image": "asdasd"
+        }
+      ],
+      "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
+    },
+    {
+      "id": 3,
+      "name": "Рубашка",
+      "size": "S",
+      "color": "Белая",
+      "textile": "Льняная",
+      "price": 30,
+      "quantity": 75,
+      "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "variants": [
+        {
+          "image": "asdasd"
+        },
+        {
+          "image": "asdasd"
+        }
+      ],
+      "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
+    },
+    {
+      "id": 10,
+      "name": "Блуза",
+      "size": "XS",
+      "color": "Голубая",
+      "textile": "Шелк",
+      "price": 40,
+      "quantity": 65,
+      "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "variants": [
+        {
+          "image": "asdasd"
+        },
+        {
+          "image": "asdasd"
+        }
+      ],
+      "description": "Классическая футболка из хлопка. Подходит для повседневного использования."
+    }
+  ]
 }

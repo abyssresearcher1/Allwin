@@ -36,24 +36,53 @@
   cursor: pointer;
 }
 
-@media screen and (max-width:576px){
-    .favourites{
-        height: 70vh;
-    }
+.favouriteProducts {
+  height: 100vh;
+  padding-top: 10%;
+  padding-left: 8%;
+}
 
-    .favourites__general{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-    }
+.favouritesCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
 
-    .favourites__info{
-      display: flex;
-      align-items: center;
-    }
+.favouritesCard {
+  width: 20%;
+}
 
-    .favouritesBtn{
-      width: 100%;
-    }
+.FavouritesCard_image {
+  width: 100%;
+}
+
+.favouritesCard__info {
+  width: 80%;
+}
+
+.FavouritesCard_image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .favourites {
+    height: 70vh;
+  }
+
+  .favourites__general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .favourites__info {
+    display: flex;
+    align-items: center;
+  }
+
+  .favouritesBtn {
+    width: 100%;
+  }
 }

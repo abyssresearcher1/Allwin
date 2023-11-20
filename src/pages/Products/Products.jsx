@@ -80,7 +80,6 @@ const Products = () => {
     }
   };
 
-
   return (
     <Layout>
       <section className={styles.products}>
@@ -200,7 +199,7 @@ const Products = () => {
                 products.map((item) => {
                   return (
                     <div key={item.id} className={styles.products__cards}>
-                      <Link to={`/Products/${item.id}`}>
+                      <Link to={`/Products/${item.id}`} className={styles.cardNav}>
                         <div className={styles.card}>
                           <div className={styles.product__image_block}>
                             <div
@@ -209,15 +208,20 @@ const Products = () => {
                               <img src={item.image} alt="product__image" />
                             </div>
                           </div>
-                          <p>{item.name}</p>
-                          <span>Цена:{item.price} сом</span>
-                          <p>Цена за упаковку: {item.price * item.quantity}</p>
+                          <div className={styles.card__info}>
+                            <p>{item.name}</p>
+                            <span>Цена:{item.price} сом</span>
+                            <p>
+                              Цена за упаковку: {item.price * item.quantity}
+                            </p>
+                          </div>
                         </div>
                       </Link>
                       <button
                         onClick={() => {
                           AddToCart(item);
                         }}
+                        className={styles.CartBtn}
                       >
                         add to cart
                       </button>

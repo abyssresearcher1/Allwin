@@ -38,7 +38,7 @@ const Cart = () => {
     }));
   };
 
-  const minusProductQuantity = (id) => {c
+  const minusProductQuantity = (id) => {
     setProductQuantities((prevQuantities) => ({
       ...prevQuantities,
       [id]: Math.max((prevQuantities[id] || 0) - 1, 0),
@@ -118,7 +118,9 @@ const Cart = () => {
           </div>
           <div className={styles.checkout}>
             <p>Total Price: {calculateTotalPrice()} Com</p>
-            <button>Оформить заказ!</button>
+            <button className={styles.checkoutBtn}>
+              <Link to={"/checkout"}>Оформить заказ!</Link>
+            </button>
           </div>
         </div>
       )}

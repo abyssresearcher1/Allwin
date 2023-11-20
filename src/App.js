@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import "./App.css";
 import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
 import Delivery from "./pages/Delivery/Delivery";
 import Favourites from "./pages/Favourites/Favourites";
 import MainPage from "./pages/MainPage/MainPage";
@@ -19,6 +20,7 @@ function App() {
       <Route path="/Favourites" element={<Favourites />} />
       <Route path="/Products" element={<Products />} />
       <Route path="/Products/:id" element={<ProductDetails />} />
+      <Route path="/checkout" element={<Checkout />} />
     </Routes>
   );
 }
