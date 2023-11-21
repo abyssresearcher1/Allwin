@@ -46,8 +46,38 @@
   align-items: flex-start;
 }
 
-.addToFavouriteBtn{
+.addToFavouriteBtn {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.favouriteBtns {
+  display: flex;
+  gap: 50px;
+}
+
+.addToCartBtn {
+  padding: 10px;
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(255, 85, 85);
+  color: white;
+}
+
+.buyBtn {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(255, 85, 85);
+  color: white;
+}
+
+.buyBtn a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
   cursor: pointer;
 }

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import favouritesImg from "../../assets/favourites.webp";
 import Layout from "../../components/Layout/Layout";
 import styles from "./Favourites.module.css";
+import trash from "../../assets/delete.svg";
 
 const Favourites = () => {
   const [favouriteProduct, setFavouriteProduct] = useState(null);
@@ -23,6 +24,25 @@ const Favourites = () => {
   useEffect(() => {
     getFavourites();
   }, []);
+
+  const addToCart = async (item) => {
+    try {
+      await axios.post(`${process.env.REACT_APP_MAIN_URL}/Cart`, item);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const deleteFromFav = async (productId) => {
+    try {
+      await axios.delete(
+        `${process.env.REACT_APP_MAIN_URL}/Favourites/${productId}`
+      );
+      getFavourites();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Layout>
@@ -55,6 +75,24 @@ const Favourites = () => {
                   <div className={styles.favouritesCard__info}>
                     <h4>{item.name}</h4>
                     <p>{item.description}</p>
+                  </div>
+                  <div className={styles.addOrDelete}>
+                    <button
+                      onClick={() => {
+                        addToCart(item);
+                      }}
+                      className={styles.addToCartBtn}
+                    >
+                      Добавить в корзину
+                    </button>
+                    <button
+                      className={styles.deleteBtn}
+                      onClick={() => {
+                        deleteFromFav(item.id);
+                      }}
+                    >
+                      <img src={trash} alt="" className={styles.deleteIcon} />
+                    </button>
                   </div>
                 </div>
               );

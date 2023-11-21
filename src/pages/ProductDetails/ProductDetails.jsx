@@ -85,10 +85,11 @@ const ProductDetails = () => {
               onClick={() => {
                 addToCart(data);
               }}
+              className={styles.addToCartBtn}
             >
               В корзину
             </button>
-            <button>
+            <button className={styles.buyBtn}>
               <Link to={"/checkout"}>Купить Сейчас</Link>
             </button>
           </div>

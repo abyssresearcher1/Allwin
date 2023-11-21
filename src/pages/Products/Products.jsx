@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import ModalForMens from "../../components/ModalForMens/ModalForMens";
-import ProductDetails from "../ProductDetails/ProductDetails";
 import styles from "./Products.module.css";
 
 const Products = () => {

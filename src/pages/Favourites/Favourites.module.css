@@ -30,6 +30,11 @@
   border: none;
   border-radius: 8px;
   background: rgb(255, 85, 85);
+  cursor: pointer;
+}
+
+.favouritesBtn a {
+  text-decoration: none;
   color: white;
   font-size: 15px;
   font-weight: 600;
@@ -65,6 +70,17 @@
   border-radius: 10px;
 }
 
+.addToCartBtn {
+  padding: 10px;
+  background-color: rgb(255, 85, 85);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 576px) {
   .favourites {
     height: 70vh;
@@ -85,4 +101,20 @@
   .favouritesBtn {
     width: 100%;
   }
+}
+
+.addOrDelete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  width: 30px;
 }
